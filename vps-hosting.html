@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>搬瓦工VPS方案 - 搬瓦工VPS</title>
+    <meta name='description' http-equiv='description'
+        content='Inexpensive VPS hosting on premium hardware with RAID-10 SAS disks and E5 CPUs. Premium Gigabit bandwidth.' />
+
+    <meta name="keywords" content="vps hosting, cheap vps, vps server" />
+    <link rel="stylesheet" type="text/css" href="/templates/organicbandwagon/css/whmcs.css" />
+    <link rel="stylesheet" type="text/css" href="/templates/organicbandwagon/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/templates/organicbandwagon/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/templates/organicbandwagon/css/template.css" />
+    <link rel="stylesheet" type="text/css" href="/templates/organicbandwagon/css/6-plans.css" />
+    <script type="text/javascript" src="/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="/templates/organicbandwagon/javascript/whmcs.js"></script>
+    <link rel="stylesheet" type="text/css" href="templates/organicbandwagon/slideshow/default/default.css" />
+
+    <script>
+        function js_setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }        
+    </script>
+    <script>
+        js_setCookie("CLIENT_TZ", Intl.DateTimeFormat().resolvedOptions().timeZone, 365);
+    </script>
+    <style type="text/css">
+        <!--
+        .bannerWrapper {
+            height: 400px;
+        }
+
+        .boxspacer {
+            height: 25px;
+            line-height: 25px;
+        }
+        -->
+    </style>
+    <noscript>
+        <style type="text/css">
+            <!--.slider-wrapper { display: none; }
+            -->
+        </style>
+    </noscript>
+    <style type="text/css">
+        <!--.theme-default .nivo-controlNav { display: none; }
+        -->
+    </style>
+    <style type="text/css">
+        .example {
+            color: red;
+        }
+    </style>
+</head>
+
+<body id="hook-index">
+
+    <div class="container">
+        <div class="headercon">
+            <div class="wrapper">
+                <div class="header">
+                    <div class="logo" style="margin-top:25px; height:59px;"><a href="//"><img
+                                src="/templates/organicbandwagon/images/logo.png" width="285" height="35"
+                                alt="Bandwagon Host logo" style="padding-top:24px" /></a>
+                    </div>
+                    <div class="topright">
+                        <ul class="topmenu">
+                            <li><a href="https://bwh81.net/register.php" class="register">注册</a></li>
+                            <li><a href="https://bwh81.net/clientarea.php" class="login1">登录</a></li>
+                            <li><a href="https://bwh81.net/cart.php?aff=71184" class="contact">官网</a></li>
+                        </ul>
+                        <br>
+
+
+                    </div>
+
+
+                    <div id="menu">
+                        <ul>
+                            <li class='active'><a href='/'>首页</a></li>
+                            <li class=''><a href='/vps-hosting.html'>VPS主机</a></li>
+                            <!-- <li class=''><a href='/dubai-vps.php'>Dubai</a></li> -->
+                            <li class=''><a href='/cn2gia-vps.html'>CN2 GIA</a></li>
+                            <li class=''><a href='/knowledgebase.html'>优惠&教程</a></li>
+                            <li class=''><a href='https://cloud.quickso.cn/'>欢哥互联</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!--<div style=""><br>&nbsp;<br><b style="color:#404040">11-11 SITEWIDE RECURRING 11% DISCOUNT USE CODE BWH20211111</b><br><br></div>-->
+                <!--<div style=""><br>&nbsp;<br><b style="color:#404040">BLACK FRIDAY SITEWIDE RECURRING 10% DISCOUNT USE CODE BWH2021BF</b><br><br></div>-->
+                <!--<div style=""><br>&nbsp;<br><b style="color:#404040">2022 NEW YEAR SITEWIDE RECURRING 12.22% DISCOUNT USE CODE BWHNY2022</b><br><br></div>-->
+                <!--<div style="text-align:center;"><br>&nbsp;<br><b style="color:#404040">ONCE IN A LIFETIME PROMO: <a href='/the-plan'><b>THE PLAN</b></a></b><br><br></div>-->
+
+
+            </div>
+        </div>
+
+
+
+        <div class="bannercon">
+            <div class="wrapper">
+                <div class="bannersub">
+                    <h1>VPS 主机</h1>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="wrapper">
+            <div class="content">
+
+                <div class="contentlt-wide">
+
+                    <div class="boxlt-wide">
+
+
+                        <div class="whmcscontainer">
+
+
+
+
+                            <div class="content">
+
+                                <div class="welcome">
+                                    <h2>关于我们的独立专享VPS主机</h2>
+                                    <p>搬瓦工 VPS 服务在 KiwiVM 上运行，KiwiVM 是一个搬瓦工自主开发的安全控制面板。它允许执行所有的基本管理任务：启动 /
+                                        停止，重装操作系统，紧急控制台，rDNS（PRT）记录管理，数据中心迁移，快照，使用情况统计，API 等。
+                                    <p>
+                                        以下这些操作系统可用于您的 VPS：
+
+                                    <table cellpadding=0 cellspacing=0 border=0>
+                                        <tr>
+                                            <td>
+                                                <UL>
+                                                    <LI>CentOS
+                                                    <LI>Debian
+                                                </UL>
+                                            </td>
+                                            <td> &nbsp; </td>
+                                            <td valign=top>
+                                                <UL>
+                                                    <LI>Ubuntu
+                                                    <li>Fedora
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p>
+                                        所有操作系统都有 32 位和 64 位可供选择。
+                                    </p>
+
+
+                                </div><!-- /end welcome -->
+
+
+
+
+                                <div class="contentlt-wide">
+                                    <div id="hostingplans">
+                                        <div class="plancon">
+                                            <div class="hostingplan">
+                                                <h2>促销方案（推荐）</h2>
+                                                <ul>
+                                                    <li>硬盘（SSD RAID-10）</li>
+                                                    <li>ECC 内存</li>
+                                                    <li>每月流量</li>
+                                                    <li>CPU</li>
+                                                    <li>网络带宽</li>
+                                                    <li>机房位置</li>
+                                                    <li>虚拟化技术</li>
+                                                    <li>及时开通</li>
+                                                    <li>新账户 30 天退款保障</li>
+                                                    <li>价格</li>
+                                                    <li>购买</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="bronze">
+                                                <h2>CN2</h2>
+                                                <ul>
+                                                    <li>20 GB SSD</li>
+                                                    <li>1 GB</li>
+                                                    <li>1 TB</li>
+                                                    <li>1 核 </li>
+                                                    <li>1 Gbps</li>
+                                                    <li>DC3/DC8</li>
+                                                    <li>KVM</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li>$49.99/年</li>
+                                                </ul>
+                                                <div class="table-button"><a
+                                                        href="https://bwh81.net/aff.php?aff=71184&amp;pid=57"
+                                                        target="_blank" class="button1 brown1 medium">购买</a></div>
+                                            </div>
+                                            <div class="bronze">
+                                                <h2>CN2</h2>
+                                                <ul>
+                                                    <li>40 GB SSD</li>
+                                                    <li>2 GB</li>
+                                                    <li>2 TB</li>
+                                                    <li>2 核 </li>
+                                                    <li>1 Gbps</li>
+                                                    <li>DC3/DC8</li>
+                                                    <li>KVM</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li>$99.99/年</li>
+                                                </ul>
+                                                <div class="table-button"><a
+                                                        href="https://bwh81.net/aff.php?aff=71184&amp;pid=58"
+                                                        target="_blank" class="button1 brown1 medium">购买</a></div>
+                                            </div>
+                                            <div class="bronze">
+                                                <h2>CN2 GIA-E</h2>
+                                                <ul>
+                                                    <li>20 GB SSD</li>
+                                                    <li>1 GB</li>
+                                                    <li>1 TB</li>
+                                                    <li>2 核 </li>
+                                                    <li>2.5 Gbps</li>
+                                                    <li>DC6/DC9/日本</li>
+                                                    <li>KVM</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li>$49.99/季度</li>
+                                                </ul>
+                                                <div class="table-button"><a
+                                                        href="https://bwh81.net/aff.php?aff=71184&amp;pid=87"
+                                                        target="_blank" class="button1 brown1 medium">购买</a></div>
+                                            </div>
+                                            <div class="bronze">
+                                                <h2>CN2 GIA-E</h2>
+                                                <ul>
+                                                    <li>40 GB SSD</li>
+                                                    <li>2 GB</li>
+                                                    <li>2 TB</li>
+                                                    <li>3 核 </li>
+                                                    <li>2.5 Gbps</li>
+                                                    <li>DC6/DC9/日本</li>
+                                                    <li>KVM</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li>$89.99/季度</li>
+                                                </ul>
+                                                <div class="table-button"><a
+                                                        href="https://bwh81.net/aff.php?aff=71184&amp;pid=88"
+                                                        target="_blank" class="button1 brown1 medium">购买</a></div>
+                                            </div>
+                                            <div class="bronze">
+                                                <h2>香港</h2>
+                                                <ul>
+                                                    <li>40 GB SSD</li>
+                                                    <li>2 GB</li>
+                                                    <li>0.5 TB</li>
+                                                    <li>2 核 </li>
+                                                    <li>1 Gbps</li>
+                                                    <li>香港CN2 GIA</li>
+                                                    <li>KVM</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li>$89.99/月</li>
+                                                </ul>
+                                                <div class="table-button"><a
+                                                        href="https://bwh81.net/aff.php?aff=71184&amp;pid=95"
+                                                        target="_blank" class="button1 brown1 medium">购买</a></div>
+                                            </div>
+                                            <div class="bronze nomarginrt">
+                                                <h2>香港</h2>
+                                                <ul>
+                                                    <li>80 GB SSD</li>
+                                                    <li>4 GB</li>
+                                                    <li>1 TB</li>
+                                                    <li>4 核 </li>
+                                                    <li>1 Gbps</li>
+                                                    <li>香港CN2 GIA</li>
+                                                    <li>KVM</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li class="check">&nbsp;</li>
+                                                    <li>$155.99/月</li>
+                                                </ul>
+                                                <div class="table-button"><a
+                                                        href="https://bwh81.net/aff.php?aff=71184&amp;pid=96"
+                                                        target="_blank" class="button1 brown1 medium">购买</a></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="plancon">
+                                            <div class="hostingplan">
+                                                <h2>常规方案</h2>
+                                                <ul>
+                                                    <li>硬盘（SSD RAID-10）</li>
+                                                    <li>ECC 内存</li>
+                                                    <li>每月流量</li>
+                                                    <li>CPU</li>
+                                                    <li>网络带宽</li>
+                                                    <li>机房位置</li>
+                                                    <li>虚拟化技术</li>
+                                                    <li>及时开通</li>
+                                                    <li>新账户 30 天退款保障</li>
+                                                    <li>价格</li>
+                                                    <li>购买</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class='bronze'>
+                                                <h2>20G VPS</h2>
+                                                <ul>
+                                                    <li>20 GB SSD</li>
+                                                    <li>1024 MB</li>
+                                                    <li>1 TB</li>
+                                                    <li>2x Intel Xeon </li>
+                                                    <li>1 Gbps</li>
+                                                    <li>多机房可选</li>
+                                                    <li>KVM</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li>$49.99/年</li>
+                                                </ul>
+                                                <div class='table-button'><a
+                                                        href='https://bwh81.net/aff.php?aff=71184&pid=44'
+                                                        target="_blank" class='button1 brown1 medium'>购买</a></div>
+                                            </div>
+                                            <div class='bronze'>
+                                                <h2>40G VPS</h2>
+                                                <ul>
+                                                    <li>40 GB SSD</li>
+                                                    <li>2 GB</li>
+                                                    <li>2 TB</li>
+                                                    <li>3x Intel Xeon </li>
+                                                    <li>1 Gbps</li>
+                                                    <li>多机房可选</li>
+                                                    <li>KVM</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li>$99.99/年</li>
+                                                </ul>
+                                                <div class='table-button'><a
+                                                        href='https://bwh81.net/aff.php?aff=71184&pid=45'
+                                                        target="_blank" class='button1 brown1 medium'>购买</a></div>
+                                            </div>
+                                            <div class='bronze'>
+                                                <h2>80G VPS</h2>
+                                                <ul>
+                                                    <li>80 GB SSD</li>
+                                                    <li>4 GB</li>
+                                                    <li>3 TB</li>
+                                                    <li>4x Intel Xeon </li>
+                                                    <li>1 Gbps</li>
+                                                    <li>多机房可选</li>
+                                                    <li>KVM</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li>$19.99/月</li>
+                                                </ul>
+                                                <div class='table-button'><a
+                                                        href='https://bwh81.net/aff.php?aff=71184&pid=46'
+                                                        target="_blank" class='button1 brown1 medium'>购买</a></div>
+                                            </div>
+                                            <div class='bronze'>
+                                                <h2>160G VPS</h2>
+                                                <ul>
+                                                    <li>160 GB SSD</li>
+                                                    <li>8 GB</li>
+                                                    <li>4 TB</li>
+                                                    <li>5x Intel Xeon </li>
+                                                    <li>1 Gbps</li>
+                                                    <li>多机房可选</li>
+                                                    <li>KVM</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li>$39.99/月</li>
+                                                </ul>
+                                                <div class='table-button'><a
+                                                        href='https://bwh81.net/aff.php?aff=71184&pid=47'
+                                                        target="_blank" class='button1 brown1 medium'>购买</a></div>
+                                            </div>
+                                            <div class='bronze'>
+                                                <h2>320G VPS</h2>
+                                                <ul>
+                                                    <li>320 GB SSD</li>
+                                                    <li>16 GB</li>
+                                                    <li>5 TB</li>
+                                                    <li>6x Intel Xeon </li>
+                                                    <li>1 Gbps</li>
+                                                    <li>多机房可选</li>
+                                                    <li>KVM</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li>$79.99/月</li>
+                                                </ul>
+                                                <div class='table-button'><a
+                                                        href='https://bwh81.net/aff.php?aff=71184&pid=48'
+                                                        target="_blank" class='button1 brown1 medium'>购买</a></div>
+                                            </div>
+                                            <div class='bronze nomarginrt'>
+                                                <h2>480G VPS</h2>
+                                                <ul>
+                                                    <li>480 GB SSD</li>
+                                                    <li>24 GB</li>
+                                                    <li>6 TB</li>
+                                                    <li>7x Intel Xeon </li>
+                                                    <li>1 Gbps</li>
+                                                    <li>多机房可选</li>
+                                                    <li>KVM</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li class='check'>&nbsp;</li>
+                                                    <li>$119.99/月</li>
+                                                </ul>
+                                                <div class='table-button'><a
+                                                        href='https://bwh81.net/aff.php?aff=71184&pid=49'
+                                                        target="_blank" class='button1 brown1 medium'>购买</a></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+
+
+                                        <!--
+<div class="welcome">
+      <h2>KVM or OpenVZ?</h2>
+      <p>
+      OpenVZ advantages:
+      <UL>
+      <LI>IPv6 support
+      <li>Better CPU performance
+      </ul>
+      <p>
+      KVM advantages:
+      <UL>
+      <LI>Full virtualization
+      <LI>Custom kernel support (BBR, etc)
+      <LI>Docker support
+      <li>Better isolation
+      <li>Better network throughput
+      </ul>
+
+      
+       
+</div>--><!-- /end welcome -->
+
+
+
+
+                                        <div class="spacer">&nbsp;</div>
+
+
+
+
+
+                                    </div><!-- /end hostingplans -->
+
+                                    <div class="clear"></div>
+
+
+
+
+
+
+
+
+
+
+                                    <div class="boxlt" id="widebox">
+
+                                        <h2>所有的 VPS 主机方案都包括：</h2>
+                                        <div class="feature">
+                                            <h4>企业级服务器</h4>
+                                            <p>搬瓦工只使用高质量的企业级设备，这样大幅度减少了由于硬件故障造成的停机时间。</p>
+                                        </div>
+                                        <div class="feature">
+                                            <h4>24/7 服务监控</h4>
+                                            <p>搬瓦工的工作人员不间断地监控所有的服务和网络，主动防范一切硬件或者网络问题。</p>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="seprator"></div>
+                                        <div class="feature">
+                                            <h4>优质网络</h4>
+                                            <p>搬瓦工方案都提供至少 1 Gbps 的带宽。
+                                            </p>
+                                        </div>
+                                        <div class="feature">
+                                            <h4>搬瓦工拥有自己的设备</h4>
+                                            <p>在硬件设备方面，搬瓦工不依赖第三方，搬瓦工也拥有自己的 IP 资源。
+                                            </p>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="boxlt">
+                                        <div class="boxsmall">
+                                            <h6 class="heding1">自我管理</h6>
+                                            <p>搬瓦工的服务都是自我管理的，这使得搬瓦工能够<strong>保持低价</strong>。</p>
+                                        </div>
+                                        <div class="seprator1"></div>
+                                        <div class="boxsmall">
+                                            <h6 class="heding2">24/7 VPS 监控</h6>
+                                            <p>所有的 VPS 节点<strong>每分钟自动检测</strong>故障和过载。</p>
+                                        </div>
+                                        <div class="seprator1"></div>
+                                        <div class="boxsmall">
+                                            <h6 class="heding3">非常安全</h6>
+                                            <p>搬瓦工每周对自己的网络进行<strong>安全审计</strong>，搬瓦工的网站使用 SSL 证书进行保护。</p>
+                                        </div>
+
+                                        <div class="clear"></div>
+
+                                    </div>
+
+
+                                    
+
+
+
+                                </div><!-- /end contentlt -->
+
+
+
+
+
+
+
+
+
+                                <div class="clear"></div>
+
+                            </div><!-- /end content -->
+
+
+                            <div class="spacer">&nbsp;</div>
+
+
+
+
+
+                            <div class="clear">&nbsp;</div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <div class="clear"></div>
+
+        <div class="footercon">
+            <div class="wrapper">
+                <div class="footerinner">
+                    <p style="color:#ffffff">本站并非搬瓦工官方网站，仅为官网中文翻译并分享搬瓦工促销优惠和教程，所有链接均为搬瓦工官网链接，请放心访问。 This is not an official website of BandwagonHost.</p>
+                 
+                    <div class="clear"></div>
+                    <div class="partners">&nbsp;</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="copyrightcon">
+            <div class="wrapper">
+                <div class="copyright">Copyright &copy; 2023 <a href="http://it7.net" target="_blank">IT7 Networks
+                        Inc.</a><span><a href="https://bwh81.net/terms-of-service.php">服务条款</a> </span></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function get_browser_info() {
+            var ua = navigator.userAgent, tem, M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+            if (/trident/i.test(M[1])) {
+                tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+                return { name: 'IE', version: (tem[1] || '') };
+            }
+            if (M[1] === 'Chrome') {
+                tem = ua.match(/\bOPR\/(\d+)/)
+                if (tem != null) { return { name: 'Opera', version: tem[1] }; }
+            }
+            M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+            if ((tem = ua.match(/version\/(\d+)/i)) != null) { M.splice(1, 1, tem[1]); }
+            return {
+                name: M[0],
+                version: M[1]
+            };
+        }
+
+        function perfTest(paths, filename, doPost) {
+            var imageCount = paths.length;
+            var imagesLoaded = 0;
+            var img = new Array();
+            var url = '';
+
+            for (var i = 0; i < imageCount; i++) {
+                url = 'https://' + paths[i] + '/' + filename;
+                img[i] = new Image();
+                img[i].onload = function () {
+                    imagesLoaded++;
+                    //console.log("Loaded: " + url );
+                    //console.log("Total images loaded: " + imagesLoaded );
+                    if (imagesLoaded >= imageCount) {
+                        //console.log ( "All images loaded" );
+                        if (doPost) {
+                            var postData = {
+                                perfTiming: performance.timing,
+                                perfEntries: performance.getEntries(),
+                                browser: get_browser_info(),
+                                location: location
+                            };
+                            $.post('/perfTest/perfData.php', { postData: JSON.stringify(postData) });
+                            //console.log ( "Data posted" );
+                        }
+                    }
+                };
+                img[i].src = url;
+            }
+
+        }
+
+
+        $(document).ready(function () {
+            //    var paths=["hk-sl.bwhcdn.com", "ca-qn.bwhcdn.com", "tx-sl.bwhcdn.com", "bandwagonhost.com/perfTest", "bj-al.bwhcdn.com"];
+
+            //    perfTest (paths, '500b.jpg', false);
+
+            //    setTimeout(function(){
+            //        perfTest (paths, '100kb.jpg', true);
+            //    }, 2000);
+
+        });
+    </script>
+</body>
+
+</html>

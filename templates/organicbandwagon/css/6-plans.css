@@ -1,0 +1,113 @@
+.boxlt-wide {
+	padding:0;
+	background:none;
+	border-radius:none;
+	box-shadow:none;
+}
+
+.content .content { margin: 0; }
+
+.plan { width: 318px; background:url(../images/planbg2.png) no-repeat left top #FFF; }
+
+.contentlt-wide { width: 1000px; }
+.boxlt-wide { width: 960px; }
+#widebox { width: 960px !important; }
+#widebox .feature { width: 370px; }
+
+.hostingplan {
+	float:left;
+}
+.hostingplan h2 {
+    color: #777777;
+    font-family: 'MyriadProLightRegular';
+    font-weight: normal;
+    margin: 0;
+    padding: 13px 0 1px 5px;
+    text-shadow: 1px 1px #FFFFFF;
+}
+
+.table-button { margin: 15px 0 10px 0; text-align: center; }
+
+.hostingplan ul {
+	list-style:none;
+	margin:0px;
+	width:230px;
+	padding:0 20px 10px 20px;
+	background:url(../images/hostingplan.jpg) repeat-y right top;
+  -webkit-border-radius: 7px 0 0 7px;
+     -moz-border-radius: 7px 0 0 7px;
+          border-radius: 7px 0 0 7px;	
+}
+.hostingplan ul li {
+	line-height:40px;
+	height:40px;
+	color:#433e39;
+	font-size:14px;
+	text-shadow:1px 1px 1px #fff;
+	background:url(../images/bullet1.png) no-repeat left center;
+	padding:0 0 0 25px;
+	border-bottom:1px solid #f8a848;
+}
+.bronze {
+	float:left;
+	width:120px;
+	margin:0 2px 0 0;
+	background:url(../images/planbtm.png) repeat-x left bottom;
+	border-style:solid;
+	border-color:#fff;
+	border-width:0 0 2px 0;
+	  -webkit-border-radius: 0 0 7px 7px;
+     -moz-border-radius: 0 0 7px 7px;
+          border-radius: 0 0 7px 7px;
+}
+.bronze h2 {
+	margin:0px;
+	padding:0px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:16px;
+	color:#FFF;
+	background:url(../images/tabtopbg.png) repeat-x left top;
+	border-top: #000 1px solid;
+	border-right: #000 1px solid;
+	border-left: #000 1px solid;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	font-weight: bold;
+}
+.bronzerate {
+	background:url(../images/bronzerate.png) no-repeat left top;
+	height:83px;
+	width:179px;
+}
+.bronze ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	background:#FFF;
+}
+.bronze ul li {
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-bottom:1px solid #dddddd;
+	color:#777;
+}
+.checkmark {
+	background:url(../images/checkmark.png) no-repeat center;
+	height:40px;
+}
+.check {
+	background:url(../images/checkmark.png) no-repeat center;
+	height:40px;
+}
+.cross {
+	background:url(../images/cross.png) no-repeat center;
+	height:40px;
+}
+
+.bronzenostyle { background: none !important; border: none !important; }
+#hostingplans .spacer { height: 0; line-height: 0; }

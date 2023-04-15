@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>搬瓦工VPS</title>
+    <meta name='description' http-equiv='description'
+        content='Inexpensive VPS hosting on premium hardware with RAID-10 SAS disks and E5 CPUs. Premium Gbps bandwidth.' />
+    <meta name="keywords" content="vps hosting, cheap vps, vps server" />
+    <link rel="stylesheet" type="text/css" href="/templates/organicbandwagon/css/whmcs.css" />
+    <link rel="stylesheet" type="text/css" href="/templates/organicbandwagon/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/templates/organicbandwagon/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/templates/organicbandwagon/css/template.css" />
+    <script type="text/javascript" src="/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="/templates/organicbandwagon/javascript/whmcs.js"></script>
+    <link rel="stylesheet" type="text/css" href="templates/organicbandwagon/slideshow/default/default.css" />
+    <script>
+        function js_setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }        
+    </script>
+    <script>
+        js_setCookie("CLIENT_TZ", Intl.DateTimeFormat().resolvedOptions().timeZone, 365);
+    </script>
+    <style type="text/css">
+        <!--
+        .bannerWrapper {
+            height: 400px;
+        }
+
+        .boxspacer {
+            height: 25px;
+            line-height: 25px;
+        }
+        -->
+    </style>
+    <noscript>
+        <style type="text/css">
+            <!--.slider-wrapper { display: none; }
+            -->
+        </style>
+    </noscript>
+    <style type="text/css">
+        <!--.theme-default .nivo-controlNav { display: none; }
+        -->
+    </style>
+    <style type="text/css">
+        .example {
+            color: red;
+        }
+    </style>
+</head>
+
+<body id="hook-index">
+
+    <div class="container">
+        <div class="headercon">
+            <div class="wrapper">
+                <div class="header">
+                    <div class="logo" style="margin-top:25px; height:59px;"><a href="/"><img
+                                src="/templates/organicbandwagon/images/logo.png" width="285" height="35"
+                                alt="Bandwagon Host logo" style="padding-top:24px" /></a>
+                    </div>
+                    <div class="topright">
+                        <ul class="topmenu">
+                            <li><a href="https://bwh81.net/register.php" class="register">注册</a></li>
+                            <li><a href="https://bwh81.net/clientarea.php" class="login1">登录</a></li>
+                            <li><a href="https://bwh81.net/cart.php?aff=71184" class="contact">官网</a></li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <li class='active'><a href='/'>首页</a></li>
+                            <li class=''><a href='/vps-hosting.html'>VPS主机</a></li>
+                            <!-- <li class=''><a href='/dubai-vps.php'>Dubai</a></li> -->
+                            <li class=''><a href='/cn2gia-vps.html'>CN2 GIA</a></li>
+                            <li class=''><a href='/knowledgebase.html'>优惠&教程</a></li>
+                            <li class=''><a href='https://cloud.quickso.cn/'>欢哥互联</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="bannercon">
+            <div class="wrapper">
+                <a href="vps-hosting.html"><img src="templates/organicbandwagon/images/banner1.jpg"
+                        alt="Self-managed VPS hosting" /></a>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <noscript>
+            <div class="bannercon">
+                <div class="wrapper">
+                    <div class="banner">
+                        <h1>独立专享服务器提供商</h1>
+                        <div class="bannerlt">
+                            <ul class="list1">
+                                <li><span>企业级</span>硬件</li>
+                                <li><span>高速</span>带宽</li>
+                                <li class="noborderbtm"><span>KiwiVM</span>控制台</li>
+                            </ul>
+                        </div>
+                        <div class="bannerrate">
+                            <div class="doller">$<br /><span>/月</span></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="signup"><a href="https://bwh81.net/cart.php?aff=71184">选择注册!</a></div>
+                        <div class="learnmore"><a href="vps-hosting.html">了解更多....</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </noscript>
+        <div class="wrapper">
+            <div class='plancon-home'>
+                <div class='plan'>
+                    <h2><span class='planheading1'></span>20G KVM VPS</h2>
+                    <ul>
+                        <li><span>硬盘: 20 GB RAID-10</span></li>
+                        <li><span>内存: 1024 MB</span></li>
+                        <li><span>CPU: 2x Intel Xeon </span></li>
+                        <li><span>流量: 1 TB/月</span></li>
+                        <li><span>带宽: 1 Gbps</span></li>
+                        <li><span>机房：多机房可选</span></li>
+                    </ul>
+                    <div class='doller1'>$49.99<span>/年</span></div>
+                    <div class='ordernow'>
+                        <a href='vps-hosting.html' class='button1 yellow1 medium'>购买</a>
+                    </div>
+                </div>
+                <div class='plan'>
+                    <h2><span class='planheading1'></span>40G KVM VPS</h2>
+                    <ul>
+                        <li><span>硬盘: 40 GB RAID-10</span></li>
+                        <li><span>内存: 2 GB</span></li>
+                        <li><span>CPU: 3x Intel Xeon </span></li>
+                        <li><span>流量: 2 TB/月</span></li>
+                        <li><span>带宽: 1 Gbps</span></li>
+                        <li><span>机房：多机房可选</span></li>
+                    </ul>
+                    <div class='doller1'>$52.99<span>/半年</span></div>
+                    <div class='ordernow'>
+                        <a href='vps-hosting.html' class='button1 yellow1 medium'>购买</a>
+                    </div>
+                </div>
+                <div class='plan nomarginrt'>
+                    <h2><span class='planheading1'></span>80G KVM VPS</h2>
+                    <ul>
+                        <li><span>硬盘: 80 GB RAID-10</span></li>
+                        <li><span>内存: 4 GB</span></li>
+                        <li><span>CPU: 4x Intel Xeon </span></li>
+                        <li><span>流量: 3 TB/月</span></li>
+                        <li><span>带宽: 1 Gbps</span></li>
+                        <li><span>机房：多机房可选</span></li>
+                    </ul>
+                    <div class='doller1'>$19.99<span>/月</span></div>
+                    <div class='ordernow'>
+                        <a href='vps-hosting.html' class='button1 yellow1 medium'>购买</a>
+                    </div>
+                </div>
+            </div>
+            <div class='plancon-home'>
+                <div class='plan'>
+                    <h2><span class='planheading1'></span>160G KVM VPS</h2>
+                    <ul>
+                        <li><span>硬盘: 160 GB RAID-10</span></li>
+                        <li><span>内存: 8 GB</span></li>
+                        <li><span>CPU: 5x Intel Xeon </span></li>
+                        <li><span>流量: 4 TB/月</span></li>
+                        <li><span>带宽: 1 Gbps</span></li>
+                        <li><span>机房：多机房可选</span></li>
+                    </ul>
+                    <div class='doller1'>$39.99<span>/月</span></div>
+                    <div class='ordernow'>
+                        <a href='vps-hosting.html' class='button1 yellow1 medium'>购买</a>
+                    </div>
+                </div>
+                <div class='plan'>
+                    <h2><span class='planheading1'></span>320G KVM VPS</h2>
+                    <ul>
+                        <li><span>硬盘: 320 GB RAID-10</span></li>
+                        <li><span>内存: 16 GB</span></li>
+                        <li><span>CPU: 6x Intel Xeon </span></li>
+                        <li><span>流量: 5 TB/月</span></li>
+                        <li><span>带宽: 1 Gbps</span></li>
+                        <li><span>机房：多机房可选</span></li>
+                    </ul>
+                    <div class='doller1'>$79.99<span>/月</span></div>
+                    <div class='ordernow'>
+                        <a href='vps-hosting.html' class='button1 yellow1 medium'>购买</a>
+                    </div>
+                </div>
+                <div class='plan nomarginrt'>
+                    <h2><span class='planheading1'></span>480G KVM VPS</h2>
+                    <ul>
+                        <li><span>硬盘: 480GB RAID-10</span></li>
+                        <li><span>内存: 24 GB</span></li>
+                        <li><span>CPU: 7x Intel Xeon </span></li>
+                        <li><span>流量: 6 TB/月</span></li>
+                        <li><span>带宽: 1 Gbps</span></li>
+                        <li><span>机房：多机房可选</span></li>
+                    </ul>
+                    <div class='doller1'>$119.99<span>/月</span></div>
+                    <div class='ordernow'>
+                        <a href='vps-hosting.html' class='button1 yellow1 medium'>购买</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="content">
+                <div class="contentlt">
+                    <div class="boxlt softaculous-box">
+                        <div class="scripts"><strong>超过20个系统模板</strong> <br />
+                            可供选择！ 32 位和 64 位 <br />
+                            系统均可选择。
+                        </div>
+                    </div>
+                    <div class="boxlt">
+                        <h2>所有的 VPS 主机方案都包括：</h2>
+                        <div class="feature">
+                            <h4>企业级服务器</h4>
+                            <p>搬瓦工只使用高质量的企业级设备，这样大幅度减少了由于硬件故障造成的停机时间。</p>
+                        </div>
+                        <div class="feature">
+                            <h4>24/7 服务监控</h4>
+                            <p>搬瓦工的工作人员不间断地监控所有的服务和网络，主动防范一切硬件或者网络问题。</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="seprator"></div>
+                        <div class="feature">
+                            <h4>优质网络</h4>
+                            <p>搬瓦工方案都提供至少 1 Gbps 的带宽。
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <h4>搬瓦工拥有自己的设备</h4>
+                            <p>在硬件设备方面，搬瓦工不依赖第三方，搬瓦工也拥有自己的 IP 资源。
+                            </p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="boxlt">
+                        <div class="boxsmall">
+                            <h6 class="heding1">自我<br />管理</h6>
+                            <p>搬瓦工的服务都是自我管理的，这使得搬瓦工能够<strong>保持低价</strong>。</p>
+                        </div>
+                        <div class="seprator1"></div>
+                        <div class="boxsmall">
+                            <h6 class="heding2">24/7 VPS<br />监控</h6>
+                            <p>所有的 VPS 节点<strong>每分钟自动检测</strong>故障和过载。</p>
+                        </div>
+                        <div class="seprator1"></div>
+                        <div class="boxsmall">
+                            <h6 class="heding3">非常<br />安全</h6>
+                            <p>搬瓦工每周对自己的网络进行 <strong>安全审计</strong> 搬瓦工的网站使用 SSL 证书进行保护。</p>
+                        </div>
+                        <div class="clear">&nbsp;</div>
+                    </div>
+                    <div class="spacer">&nbsp;</div>
+                </div>
+                <div class="contentrt">
+
+                    <div class="boxrt">
+                        <h2>VPS 功能</h2>
+                        <div class="image1"></div>
+                        <h4>所有 VPS 都包含以下功能：</h4>
+                        <ul>
+                            <li>PPP 和 VPN 支持（tun/tap）</li>
+                            <li>即时 RDNS 设置</li>
+                            <li>完整的 root 权限</li>
+                            <li class="noborderbtm">KiwiVM 面板</li>
+                        </ul>
+                        <div class="learnmore1"><a href="vps-hosting.html">了解更多 &gt;&gt;</a></div>
+                    </div>
+                    <div class="boxrt">
+                        <h2>产品服务承诺</h2>
+                        <h4>正在考虑换到搬瓦工的产品？</h4>
+                        <ul>
+                            <li>产品实时开通</li>
+                            <li>99% 在线率保障</li>
+                            <li>随时取消</li>
+                            <li class="noborderbtm">30 天退款保障</li>
+                        </ul>
+                        <div class="learnmore1"><a href="vps-hosting.html">了解更多 &gt;&gt;</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="footercon">
+            <div class="wrapper">
+                <div class="footerinner">
+                    <p style="color:#ffffff">本站并非搬瓦工官方网站，仅为官网中文翻译并分享搬瓦工促销优惠和教程，所有链接均为搬瓦工官网链接，请放心访问。 This is not an official website of BandwagonHost.</p>
+                    <div class="clear"></div>
+                    <div class="partners">&nbsp;</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="copyrightcon">
+            <div class="wrapper">
+                <div class="copyright">Copyright &copy; 2023 <a href="http://it7.net" target="_blank">IT7 Networks
+                        Inc.</a><span><a href="https://bwh81.net/terms-of-service.php">服务条款</a> </span></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function get_browser_info() {
+            var ua = navigator.userAgent, tem, M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+            if (/trident/i.test(M[1])) {
+                tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+                return { name: 'IE', version: (tem[1] || '') };
+            }
+            if (M[1] === 'Chrome') {
+                tem = ua.match(/\bOPR\/(\d+)/)
+                if (tem != null) { return { name: 'Opera', version: tem[1] }; }
+            }
+            M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+            if ((tem = ua.match(/version\/(\d+)/i)) != null) { M.splice(1, 1, tem[1]); }
+            return {
+                name: M[0],
+                version: M[1]
+            };
+        }
+
+        function perfTest(paths, filename, doPost) {
+            var imageCount = paths.length;
+            var imagesLoaded = 0;
+            var img = new Array();
+            var url = '';
+
+            for (var i = 0; i < imageCount; i++) {
+                url = 'https://' + paths[i] + '/' + filename;
+                img[i] = new Image();
+                img[i].onload = function () {
+                    imagesLoaded++;
+                    //console.log("Loaded: " + url );
+                    //console.log("Total images loaded: " + imagesLoaded );
+                    if (imagesLoaded >= imageCount) {
+                        //console.log ( "All images loaded" );
+                        if (doPost) {
+                            var postData = {
+                                perfTiming: performance.timing,
+                                perfEntries: performance.getEntries(),
+                                browser: get_browser_info(),
+                                location: location
+                            };
+                            $.post('/perfTest/perfData.php', { postData: JSON.stringify(postData) });
+                            //console.log ( "Data posted" );
+                        }
+                    }
+                };
+                img[i].src = url;
+            }
+
+        }
+
+
+        $(document).ready(function () {
+            //    var paths=["hk-sl.bwhcdn.com", "ca-qn.bwhcdn.com", "tx-sl.bwhcdn.com", "bandwagonhost.com/perfTest", "bj-al.bwhcdn.com"];
+
+            //    perfTest (paths, '500b.jpg', false);
+
+            //    setTimeout(function(){
+            //        perfTest (paths, '100kb.jpg', true);
+            //    }, 2000);
+
+        });
+    </script>
+</body>
+
+</html>
